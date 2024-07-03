@@ -36,10 +36,10 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.5.1
         with:
-          images: <artem123strel/golang-hello
+          images: artem123strel/hello-golang
 
       - name: Build and push Docker Inage
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v6
         with:
           context: .
           push: true
